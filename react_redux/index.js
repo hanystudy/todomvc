@@ -1,5 +1,5 @@
 import React, {Component, PropType} from 'react'
 import {render} from 'react-dom'
-import TodoApp from './components/todoApp'
+import TodoContainer from './components/todoContainer'
 
-render(<TodoApp />, document.querySelector('#root'))
+render(<TodoContainer />, document.querySelector('#root'))
