@@ -1,12 +1,12 @@
 import React, {Component, PropType} from 'react'
 
 export default class TodoInput extends Component {
-  constructor(state) {
-    super(state)
+  constructor(props) {
+    super(props)
   }
 
   addTodo() {
-    this.props.appendTodo({text: this.refs.newTodoText.value, complete: false})
+    this.props.appendTodo(this.refs.newTodoText.value)
     this.refs.newTodoText.value = ''
   }
 
