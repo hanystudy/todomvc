@@ -7,20 +7,20 @@ import TodoOperations from './reducers/todoOperations'
 
 const data = [
   {
-    text: 'todo 1',
+    text: 'todo 1: reading',
     complete: false
   },
   {
-    text: 'todo 2',
+    text: 'todo 2: writing',
     complete: false
   },
   {
-    text: 'todo 3',
+    text: 'todo 3: sleeping',
     complete: true
   }
 ]
 
-const store = createStore(TodoOperations, {data: data}) 
+const store = createStore(TodoOperations, {data: data})
 
 render(
 	<Provider store={store}>

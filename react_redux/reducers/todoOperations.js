@@ -1,7 +1,7 @@
 export default function todoOperations(state, action) {
   switch(action.type) {
     case 'APPEND_TODO':
-      return {data: [ ...state.data, 
+      return {data: [ ...state.data,
 	       {
 	         text: action.text,
 		 complete: false
